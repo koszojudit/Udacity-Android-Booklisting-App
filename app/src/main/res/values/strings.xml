@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Book@Me</string>
+
+    <string name="search_field_hint">Search in titles</string>
+
+    <string name="book_author_placeholder">Author Name</string>
+    <string name="book_title_placeholder">Title of the book, title of the book, title of the book</string>
+
+    <string name="start_with">Here are a few Android books to get you started:</string>
+    <string name="no_books">No books found.</string>
+    <string name="no_internet">Problem with Internet connection.</string>
+
+    <string name="exception_http_request">Problem with making the HTTP request.</string>
+    <string name="exception_url_invalid">Problem with the URL string.</string>
+    <string name="exception_resp_code">Error response code</string>
+    <string name="exception_json_results">Problem retrieving JSON results</string>
+    <string name="exception_date_format">Problem formatting input date</string>
+
+    <string name="toast_enter_word">Please enter a word to search for book titles</string>
+
+    <string name="no_author">No author.</string>
+
+</resources>

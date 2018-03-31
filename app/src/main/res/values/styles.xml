@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Search field style -->
+    <style name="search_field_style" parent="AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/search_field_shape</item>
+        <item name="android:padding">@dimen/search_field_padding</item>
+        <item name="android:textColorHint">@color/colorPlaceholder</item>
+    </style>
+
+    <!-- Search button style -->
+    <style name="search_button_style" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/search_button_marginLeft</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Basic text style -->
+    <style name="basic_text_style">
+        <item name="android:textSize">@dimen/textSize_basic</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <!-- Book list item author style -->
+    <style name="book_author_style">
+        <item name="android:textSize">@dimen/textSize_author</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Book list item title style -->
+    <style name="book_title_style">
+        <item name="android:textSize">@dimen/textSize_title</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:text">normal</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+</resources>

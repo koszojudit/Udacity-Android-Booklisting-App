@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.example.android.a7_bookme.MainActivity">
+
+    <!-- Search field with search icon as ImageButton -->
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/search_view_padding">
+
+        <EditText
+            android:id="@+id/search_bar"
+            style="@style/search_field_style"
+            android:hint="@string/search_field_hint"
+            />
+
+        <ImageButton
+            android:id="@+id/search_button"
+            style="@style/search_button_style"
+            android:src="@drawable/ic_search_white"
+            />
+
+    </LinearLayout>
+
+    <!-- Temporary message for the user to start with. -->
+    <TextView
+        android:id="@+id/start_with_view"
+        style="@style/basic_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_layout"
+        tools:text="@string/start_with"/>
+
+    <!-- RecyclerView list which is populated with the query from the user input. -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/book_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_with_view">
+    </android.support.v7.widget.RecyclerView>
+
+    <!-- Warning message is only shown when there is no internet connection. -->
+    <TextView
+        android:id="@+id/no_books_view"
+        style="@style/basic_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:text="@string/no_books"/>
+
+    <!-- Loading indicator is shown when results are loading -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
